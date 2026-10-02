@@ -89,7 +89,7 @@ export default function ProductsPage() {
       ],
       warranty: "25-Yr Panel Warranty • 5-Yr Inverter Warranty",
       badge: "High Performance",
-      image: "/images/residential-solar.jpg",
+      image: "/hero-solar-installation.jpg",
     },
     {
       id: "pkg-10kw",

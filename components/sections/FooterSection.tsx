@@ -221,12 +221,12 @@ export default function FooterSection() {
         </div>
 
         {/* Footer Bottom Strip */}
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#5B6472]">
+        <div className="pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-[#5B6472] pr-0 sm:pr-24 pb-6 sm:pb-0">
           <span>
             &copy; {currentYear} Dream Solar Energy. All rights reserved.
           </span>
           <span>
-            Serving: Vehari &bull; Burewala &bull; Mailsi &bull; Lodhran &bull; Sahiwal &bull; South Punjab
+            Serving: Vehari &bull; Burewala &bull; Mailsi &bull; South Punjab
           </span>
         </div>
       </div>

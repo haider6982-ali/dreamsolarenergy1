@@ -24,7 +24,10 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: siteContent.meta.title,
+  title: {
+    default: "Dream Solar Energy | Solar Systems in Vehari & South Punjab",
+    template: "%s | Dream Solar Energy",
+  },
   description: siteContent.meta.description,
   keywords: [
     "Dream Solar Energy",
@@ -36,17 +39,17 @@ export const metadata: Metadata = {
     "Solar Tube Well Punjab",
   ],
   openGraph: {
-    title: siteContent.meta.title,
+    title: "Dream Solar Energy | Solar Systems in Vehari & South Punjab",
     description: siteContent.meta.description,
     type: "website",
     locale: "en_PK",
-    siteName: siteContent.meta.companyName,
+    siteName: "Dream Solar Energy",
     images: [
       {
         url: "/dream-solar-logo.jpg",
         width: 800,
         height: 800,
-        alt: siteContent.meta.companyName,
+        alt: "Dream Solar Energy",
       },
     ],
   },

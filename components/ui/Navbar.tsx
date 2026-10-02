@@ -54,7 +54,7 @@ export default function Navbar() {
           </div>
           <div className="flex flex-col">
             <span className="font-display font-extrabold text-sm sm:text-base tracking-tight text-solar-navy leading-none">
-              DREAM SOLAR
+              DREAM SOLAR ENERGY
             </span>
             <span className="font-sans text-[10px] uppercase tracking-wider text-solar-muted font-semibold mt-0.5">
               VEHARI • SOUTH PUNJAB

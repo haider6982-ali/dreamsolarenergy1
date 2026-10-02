@@ -223,7 +223,7 @@ export default function AboutPage() {
               <div>
                 <div className="relative h-56 w-full overflow-hidden bg-solar-navy/5">
                   <Image
-                    src="/images/turnkey-installation.jpg"
+                    src="/images/tier1-solar-panels.jpg"
                     alt="Genuine Solar Panels and Inverters"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -452,36 +452,78 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Bottom Visit & Contact CTA */}
+      {/* Bottom Visit & Contact CTA with Signature Image Treatment */}
       <section className="py-16 md:py-20 px-5 sm:px-6 lg:px-8 bg-solar-subtle border-t border-solar-border">
-        <div className="max-w-3xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-solar-amber mb-3">
-            <span className="w-5 h-0.5 bg-solar-amber" />
-            <span>Come Visit Us</span>
-          </div>
-          <h2 className="text-3xl sm:text-4xl font-display font-black text-solar-navy tracking-tight mb-4">
-            Visit Our Office in Vehari
-          </h2>
-          <p className="text-solar-muted text-sm sm:text-base max-w-xl mx-auto mb-8 font-sans">
-            Our office is located on Allama Iqbal Road, near Bank of Punjab, Vehari. Come have tea with us and let’s discuss the best solar setup for your home or business.
-          </p>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* Left Content */}
+            <div className="lg:col-span-7">
+              <div className="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-solar-amber mb-3">
+                <span className="w-5 h-0.5 bg-solar-amber" />
+                <span>Come Visit Us</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-display font-black text-solar-navy tracking-tight mb-4">
+                Visit Our Office in Vehari
+              </h2>
+              <p className="text-solar-muted text-sm sm:text-base leading-relaxed mb-6 font-sans max-w-xl">
+                Our office is located on Allama Iqbal Road, near Bank of Punjab, Vehari. Come have tea with us and let’s discuss the best solar setup for your home or business.
+              </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <Link
-              href="/contact"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-solar-deep hover:bg-solar-navy text-white font-display font-semibold text-sm px-7 py-3.5 rounded-xl shadow-md transition-all"
-            >
-              <span>Get Location & Directions</span>
-              <ArrowRight className="w-4 h-4 text-solar-amber" />
-            </Link>
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center gap-2 bg-solar-deep hover:bg-solar-navy text-white font-display font-semibold text-sm px-7 py-3.5 rounded-xl shadow-md transition-all text-center"
+                >
+                  <span>Get Location & Directions</span>
+                  <ArrowRight className="w-4 h-4 text-solar-amber" />
+                </Link>
 
-            <button
-              onClick={() => openModal()}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-solar-amber hover:bg-solar-gold text-solar-deep font-display font-bold text-sm px-7 py-3.5 rounded-xl shadow-md transition-all cursor-pointer"
-            >
-              <Zap className="w-4 h-4" />
-              <span>Get Free Quotation</span>
-            </button>
+                <button
+                  onClick={() => openModal()}
+                  className="inline-flex items-center justify-center gap-2 bg-solar-amber hover:bg-solar-gold text-solar-deep font-display font-bold text-sm px-7 py-3.5 rounded-xl shadow-md transition-all cursor-pointer text-center"
+                >
+                  <Zap className="w-4 h-4" />
+                  <span>Get Free Quotation</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Right: Signature Photo Card with 2 Overlapping Dark Stat Cards */}
+            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="relative w-full max-w-[440px] aspect-[4/3] rounded-2xl overflow-hidden border border-solar-border shadow-lg bg-solar-navy">
+                <Image
+                  src="/images/turnkey-installation.jpg"
+                  alt="Dream Solar Energy Office and Field Engineers"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 440px"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-solar-deep/85 via-solar-deep/30 to-transparent" />
+                
+                {/* 2 Dark Stat Cards Overlapping Bottom Edge */}
+                <div className="absolute inset-0 p-5 flex flex-col justify-end z-10">
+                  <div className="grid grid-cols-2 gap-2.5 w-full">
+                    <div className="bg-solar-deep/80 border border-white/10 rounded-xl p-3 text-white backdrop-blur-md">
+                      <p className="text-xl sm:text-2xl font-display font-extrabold text-solar-amber">
+                        Vehari
+                      </p>
+                      <p className="text-[11px] uppercase tracking-wider text-slate-300 font-medium">
+                        Allama Iqbal Rd
+                      </p>
+                    </div>
+
+                    <div className="bg-solar-deep/80 border border-white/10 rounded-xl p-3 text-white backdrop-blur-md">
+                      <p className="text-xl sm:text-2xl font-display font-extrabold text-solar-amber">
+                        6 Days
+                      </p>
+                      <p className="text-[11px] uppercase tracking-wider text-slate-300 font-medium">
+                        Open Mon–Sat
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
