@@ -2,72 +2,67 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import {
-  CheckCircle2,
-  MessageSquare,
-  TrendingDown,
-  Zap,
-} from "lucide-react";
+import { CheckCircle2, MessageSquare, TrendingDown, Zap } from "lucide-react";
 import { useQuoteModal } from "@/components/providers/QuoteModalContext";
 import PageHero from "@/components/ui/PageHero";
+
+const sizes = [
+  {
+    kw: 4,
+    monthlyUnits: 520,
+    approxCost: 650000,
+    recommendedFor: "3–5 Marla Homes",
+    runs: "1 Inverter AC (1.5 Ton) + Refrigerator + Water Pump + Fans & LED Lights",
+    image: "/images/pkg-4kw-rooftop.jpg",
+  },
+  {
+    kw: 6,
+    monthlyUnits: 820,
+    approxCost: 980000,
+    recommendedFor: "5–10 Marla Homes",
+    runs: "2 Inverter ACs + Refrigerator + Deep Freezer + Water Pump + Night Battery Backup",
+    image: "/images/pkg-6kw-rooftop.jpg",
+  },
+  {
+    kw: 8,
+    monthlyUnits: 1100,
+    approxCost: 1280000,
+    recommendedFor: "10 Marla – 1 Kanal Homes",
+    runs: "3 Inverter ACs + Complete Household Load + Full Night Battery Backup",
+    image: "/images/pkg-8kw-rooftop.jpg",
+  },
+  {
+    kw: 10,
+    monthlyUnits: 1450,
+    approxCost: 1620000,
+    recommendedFor: "1 Kanal Homes & Net Metering",
+    runs: "3–4 Inverter ACs + Complete Household/Shop Load + Extra Units Exported to WAPDA",
+    image: "/images/residential-solar.jpg",
+  },
+  {
+    kw: 15,
+    monthlyUnits: 2150,
+    approxCost: 2350000,
+    recommendedFor: "Large Luxury Homes & Commercial",
+    runs: "5+ ACs Simultaneously + Commercial Lighting + Heavy WAPDA Bill Credits",
+    image: "/images/commercial-solar.jpg",
+  },
+  {
+    kw: 20,
+    monthlyUnits: 2800,
+    approxCost: 2950000,
+    recommendedFor: "Industrial & Agricultural",
+    runs: "Commercial Plaza + Private Clinic + Small Factory + Solar Tube Well Pumping",
+    image: "/images/industrial-solar.jpg",
+  },
+];
 
 export default function CalculatorPage() {
   const [bill, setBill] = useState(35000);
   const { openModal } = useQuoteModal();
 
-  const ratePerUnit = 55; // Average PKR per unit with taxes and fuel adjustments in South Punjab
+  const ratePerUnit = 55;
   const units = Math.round(bill / ratePerUnit);
-
-  const sizes = [
-    {
-      kw: 4,
-      monthlyUnits: 520,
-      approxCost: 650000,
-      bestFor: "1 Inverter AC (1.5 Ton) + Refrigerator + Water Pump + Fans & LED Lights",
-      image: "/images/pkg-4kw-rooftop.jpg",
-      type: "3–5 Marla Homes",
-    },
-    {
-      kw: 6,
-      monthlyUnits: 820,
-      approxCost: 980000,
-      bestFor: "2 Inverter ACs + Refrigerator + Deep Freezer + Water Pump + Night Battery Backup",
-      image: "/images/pkg-6kw-rooftop.jpg",
-      type: "5–10 Marla Homes",
-    },
-    {
-      kw: 8,
-      monthlyUnits: 1100,
-      approxCost: 1280000,
-      bestFor: "3 Inverter ACs + Complete Household Load + Full Night Backup",
-      image: "/images/pkg-8kw-rooftop.jpg",
-      type: "10 Marla – 1 Kanal Homes",
-    },
-    {
-      kw: 10,
-      monthlyUnits: 1450,
-      approxCost: 1620000,
-      bestFor: "3–4 Inverter ACs + Complete Household Load + Units Exported to WAPDA",
-      image: "/images/residential-solar.jpg",
-      type: "1 Kanal Homes & Net Metering",
-    },
-    {
-      kw: 15,
-      monthlyUnits: 2150,
-      approxCost: 2350000,
-      bestFor: "5+ ACs Simultaneously + Commercial Lighting + Heavy WAPDA Bill Credits",
-      image: "/images/commercial-solar.jpg",
-      type: "Large Luxury Homes & Commercial",
-    },
-    {
-      kw: 20,
-      monthlyUnits: 2800,
-      approxCost: 2950000,
-      bestFor: "Commercial Plaza + Private Clinic + Small Factory + Solar Tube Well",
-      image: "/images/industrial-solar.jpg",
-      type: "Industrial & Agricultural",
-    },
-  ];
 
   const recommended = sizes.find((s) => s.monthlyUnits >= units) || sizes[sizes.length - 1];
   const coveredUnits = Math.min(recommended.monthlyUnits, units);
@@ -100,10 +95,10 @@ export default function CalculatorPage() {
 
       {/* Calculator Body */}
       <section className="py-16 md:py-20 px-5 sm:px-6 lg:px-8 bg-solar-alabaster">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="bg-white border border-solar-border rounded-2xl p-6 sm:p-10 shadow-sm">
-            
-            {/* Slider Control */}
+
+            {/* Slider */}
             <div className="mb-8">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
                 <label className="text-sm sm:text-base font-display font-bold text-solar-navy">
@@ -131,7 +126,7 @@ export default function CalculatorPage() {
               </div>
             </div>
 
-            {/* Quick Bill Metric Strip */}
+            {/* Bill Metric Strip */}
             <div className="bg-solar-subtle border border-solar-border rounded-xl p-4 mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs sm:text-sm">
               <div className="flex items-center gap-2">
                 <TrendingDown className="w-4 h-4 text-solar-emerald shrink-0" />
@@ -139,105 +134,141 @@ export default function CalculatorPage() {
                 <strong className="text-solar-navy font-display">{units.toLocaleString()} Units / Month</strong>
               </div>
               <div className="text-solar-muted">
-                Tariff baseline: <strong className="text-solar-navy">Rs. {ratePerUnit}/unit (including fuel & taxes)</strong>
+                Tariff baseline: <strong className="text-solar-navy">Rs. {ratePerUnit}/unit (including fuel &amp; taxes)</strong>
               </div>
             </div>
 
-            {/* Recommendation Result Card */}
-            <div className="bg-solar-deep border border-white/10 rounded-2xl p-6 sm:p-8 text-white shadow-xl mb-8 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-80 h-80 bg-solar-amber/10 rounded-full blur-3xl pointer-events-none" />
+            {/* Result: Left metrics + Right reactive image */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-8">
 
-              <div className="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-                
-                {/* Result Left */}
-                <div className="md:col-span-7">
+              {/* Left — Metrics */}
+              <div className="lg:col-span-7 flex flex-col gap-5">
+                <div>
                   <div className="flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-solar-amber mb-2">
                     <span className="w-4 h-0.5 bg-solar-amber" />
                     <span>Recommended Solar System</span>
                   </div>
-
-                  <h3 className="text-3xl sm:text-4xl font-display font-black text-white mb-2">
+                  <h3 className="text-4xl sm:text-5xl font-display font-black text-solar-navy tracking-tight">
                     {recommended.kw} kW System
                   </h3>
-
-                  <p className="text-xs sm:text-sm text-slate-300 mb-6 font-sans">
-                    Runs: <strong className="text-solar-amber">{recommended.bestFor}</strong>
+                  <p className="text-sm text-solar-muted mt-1 font-sans">
+                    Best for: <strong className="text-solar-navy">{recommended.recommendedFor}</strong>
                   </p>
+                </div>
 
-                  <div className="grid grid-cols-2 gap-3 mb-6">
-                    <div className="bg-white/5 border border-white/10 rounded-xl p-3">
-                      <p className="text-[10px] text-slate-300 font-bold uppercase tracking-wider">
-                        Monthly Generation
-                      </p>
-                      <p className="text-lg sm:text-xl font-display font-bold text-white">
-                        ~{recommended.monthlyUnits} Units
-                      </p>
-                    </div>
-
-                    <div className="bg-white/5 border border-white/10 rounded-xl p-3">
-                      <p className="text-[10px] text-slate-300 font-bold uppercase tracking-wider">
-                        Estimated Savings
-                      </p>
-                      <p className="text-lg sm:text-xl font-display font-bold text-solar-emerald">
-                        Rs. {estimatedSavings.toLocaleString()} / mo
-                      </p>
-                    </div>
+                {/* Stat tiles */}
+                <div className="grid grid-cols-3 gap-3">
+                  <div className="bg-solar-alabaster border border-solar-border rounded-[14px] p-4">
+                    <p className="text-[10px] text-solar-muted font-bold uppercase tracking-wider mb-1">Monthly Generation</p>
+                    <p className="text-xl font-display font-black text-solar-navy">~{recommended.monthlyUnits.toLocaleString()}</p>
+                    <p className="text-[10px] text-solar-muted font-sans">units / mo</p>
                   </div>
+                  <div className="bg-solar-alabaster border border-solar-border rounded-[14px] p-4">
+                    <p className="text-[10px] text-solar-muted font-bold uppercase tracking-wider mb-1">Est. Monthly Saving</p>
+                    <p className="text-xl font-display font-black text-solar-emerald">Rs. {estimatedSavings.toLocaleString()}</p>
+                    <p className="text-[10px] text-solar-muted font-sans">per month</p>
+                  </div>
+                  <div className="bg-solar-alabaster border border-solar-border rounded-[14px] p-4">
+                    <p className="text-[10px] text-solar-muted font-bold uppercase tracking-wider mb-1">Payback Period</p>
+                    <p className="text-xl font-display font-black text-solar-navy">~{paybackYears}</p>
+                    <p className="text-[10px] text-solar-muted font-sans">years</p>
+                  </div>
+                </div>
 
-                  <div className="flex flex-wrap items-center gap-4 text-xs text-slate-300">
-                    <span className="flex items-center gap-1.5">
-                      <CheckCircle2 className="w-4 h-4 text-solar-emerald" /> Payback in ~{paybackYears} Years
+                {/* What it runs */}
+                <div className="bg-solar-navy rounded-2xl p-5">
+                  <span className="font-sans text-[10px] uppercase tracking-wider text-solar-amber font-bold block mb-2">
+                    What this {recommended.kw} kW system runs:
+                  </span>
+                  <p className="font-display text-sm sm:text-base font-bold text-white leading-snug">
+                    {recommended.runs}
+                  </p>
+                </div>
+
+                {/* Checkmarks */}
+                <div className="flex flex-wrap gap-4 text-xs text-solar-muted">
+                  <span className="flex items-center gap-1.5">
+                    <CheckCircle2 className="w-4 h-4 text-solar-emerald" /> Payback in ~{paybackYears} Years
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <CheckCircle2 className="w-4 h-4 text-solar-emerald" /> 25-Year Panel Warranty
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <CheckCircle2 className="w-4 h-4 text-solar-emerald" /> 100% Original Tier-1
+                  </span>
+                </div>
+
+                {/* CTAs */}
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <a
+                    href={`https://wa.me/923202200884?text=${encodeURIComponent(
+                      `Hello Tariq Mahmood, my monthly electricity bill is Rs. ${bill.toLocaleString()} and the website recommended a ${recommended.kw} kW system. Please provide a formal quotation.`
+                    )}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-display font-bold text-xs py-3.5 rounded-xl transition-all shadow-md"
+                  >
+                    <MessageSquare className="w-4 h-4" />
+                    Get Detailed Quote on WhatsApp
+                  </a>
+                  <button
+                    onClick={() => openModal(`${recommended.kw} kW System`)}
+                    className="flex-1 inline-flex items-center justify-center gap-2 bg-solar-deep hover:bg-solar-navy text-white font-display font-bold text-xs py-3.5 rounded-xl transition-all shadow-md cursor-pointer"
+                  >
+                    <Zap className="w-4 h-4 text-solar-amber" />
+                    Request Free Site Audit
+                  </button>
+                </div>
+              </div>
+
+              {/* Right — Reactive image */}
+              <div className="lg:col-span-5">
+                <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-solar-border shadow-lg bg-solar-navy">
+                  <Image
+                    key={recommended.kw}
+                    src={recommended.image}
+                    alt={recommended.recommendedFor}
+                    fill
+                    className="object-cover transition-opacity duration-500"
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-solar-deep/70 via-transparent to-transparent" />
+                  <div className="absolute top-3 left-3">
+                    <span className="bg-solar-deep/90 text-white text-[10px] font-bold py-1 px-2.5 rounded-lg">
+                      {recommended.recommendedFor}
                     </span>
-                    <span className="flex items-center gap-1.5">
-                      <CheckCircle2 className="w-4 h-4 text-solar-emerald" /> 25-Year Panel Life
+                  </div>
+                  <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                    <span className="bg-solar-amber text-solar-deep text-xs font-display font-black py-1 px-3 rounded-lg">
+                      {recommended.kw} kW System
+                    </span>
+                    <span className="bg-white/10 backdrop-blur text-white text-[10px] font-bold py-1 px-2.5 rounded-lg border border-white/20">
+                      ~Rs. {recommended.approxCost.toLocaleString()}
                     </span>
                   </div>
                 </div>
 
-                {/* Result Right */}
-                <div className="md:col-span-5 flex flex-col justify-center">
-                  <div className="relative w-full aspect-4/3 rounded-xl overflow-hidden border border-white/15 shadow-md mb-4 bg-solar-navy">
-                    <Image
-                      src={recommended.image}
-                      alt={recommended.type}
-                      fill
-                      className="object-cover"
-                      sizes="300px"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-solar-deep/80 via-transparent to-transparent" />
-                    <div className="absolute top-2.5 left-2.5">
-                      <span className="bg-solar-deep/85 text-white text-[10px] font-bold py-0.5 px-2 rounded-md">
-                        {recommended.type}
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col gap-2">
-                    <a
-                      href={`https://wa.me/923202200884?text=${encodeURIComponent(`Hello Tariq Mahmood, my monthly electricity bill is Rs. ${bill.toLocaleString()} and the website recommended a ${recommended.kw} kW system. Please provide a formal quotation.`)}`}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-display font-bold text-xs py-3 rounded-xl transition-all shadow-md"
+                {/* System selector pills */}
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {sizes.map((s) => (
+                    <span
+                      key={s.kw}
+                      className={`text-[11px] font-display font-bold px-3 py-1.5 rounded-lg border transition-all ${
+                        s.kw === recommended.kw
+                          ? "bg-solar-navy text-white border-solar-navy"
+                          : "bg-white text-solar-muted border-solar-border"
+                      }`}
                     >
-                      <MessageSquare className="w-4 h-4" />
-                      <span>Get Detailed Quote on WhatsApp</span>
-                    </a>
-
-                    <button
-                      onClick={() => openModal(`${recommended.kw} kW System`)}
-                      className="w-full inline-flex items-center justify-center gap-2 bg-solar-deep hover:bg-solar-navy text-white font-display font-bold text-xs py-3 rounded-xl transition-all shadow-md cursor-pointer border border-white/10"
-                    >
-                      <Zap className="w-4 h-4 text-solar-amber" />
-                      <span>Request Free Site Audit</span>
-                    </button>
-                  </div>
+                      {s.kw} kW
+                    </span>
+                  ))}
                 </div>
-
               </div>
             </div>
 
-            {/* Bottom Note */}
-            <div className="text-center pt-2">
+            {/* Footer note */}
+            <div className="text-center pt-4 border-t border-solar-border">
               <p className="text-xs text-solar-muted font-sans">
                 * Estimates are based on average 4.8 sun hours per day in South Punjab and current MEPCO tariff slabs. Final equipment pricing depends on roof structure height and battery backup capacity.
               </p>
