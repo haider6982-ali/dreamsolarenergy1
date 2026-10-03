@@ -286,7 +286,7 @@ export const siteContent: SiteContent = {
     ratePerUnit: 55,
     defaultBill: 35000,
     minBill: 5000,
-    maxBill: 160000,
+    maxBill: 150000,
     step: 1000,
     tiers: [
       {
@@ -304,10 +304,17 @@ export const siteContent: SiteContent = {
         runs: "2 Inverter ACs + Refrigerator + Deep Freezer + Water Pump + Full Night Battery Backup",
       },
       {
+        kw: 8,
+        monthlyUnits: 1100,
+        approxCost: 1280000,
+        recommendedFor: "10 Marla to 1 Kanal Homes",
+        runs: "3 Inverter ACs + Complete Household Load + Full Night Battery Backup",
+      },
+      {
         kw: 10,
         monthlyUnits: 1450,
         approxCost: 1620000,
-        recommendedFor: "1 Kanal Homes & Commercial Plazas",
+        recommendedFor: "1 Kanal Homes & Net Metering",
         runs: "3–4 Inverter ACs + Complete Household/Shop Load + Extra Units Exported to WAPDA",
       },
       {
@@ -318,11 +325,11 @@ export const siteContent: SiteContent = {
         runs: "5+ ACs simultaneously + Commercial Lighting + Heavy Monthly WAPDA Bill Credits",
       },
       {
-        kw: 25,
-        monthlyUnits: 3600,
-        approxCost: 3800000,
+        kw: 20,
+        monthlyUnits: 2800,
+        approxCost: 2950000,
         recommendedFor: "Agricultural Tube Wells & Small Factories",
-        runs: "15 HP to 25 HP VFD Solar Tube Well pumping water sunrise to sunset with Zero Diesel Cost",
+        runs: "Commercial Plaza + Private Clinic + Small Factory + Solar Tube Well Pumping",
       },
     ],
   },

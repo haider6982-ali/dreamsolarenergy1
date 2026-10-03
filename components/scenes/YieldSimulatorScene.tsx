@@ -25,10 +25,12 @@ export default function YieldSimulatorScene() {
   ).toFixed(1);
 
   const getTierImage = (kw: number) => {
-    if (kw <= 6) return { src: "/images/residential-solar.jpg", label: "Residential Rooftop System" };
-    if (kw <= 10) return { src: "/images/solar-rooftop-showcase.jpg", label: "Executive Home / Net-Metered Setup" };
-    if (kw <= 15) return { src: "/images/commercial-solar.jpg", label: "Commercial Plaza Installation" };
-    return { src: "/images/agricultural-tubewell.jpg", label: "Agricultural Tube Well Solar System" };
+    if (kw <= 4)  return { src: "/images/pkg-4kw-rooftop.jpg",      label: "3–5 Marla Residential Rooftop" };
+    if (kw <= 6)  return { src: "/images/pkg-6kw-rooftop.jpg",      label: "5–10 Marla Family Home" };
+    if (kw <= 8)  return { src: "/images/pkg-8kw-rooftop.jpg",      label: "10 Marla – 1 Kanal Home" };
+    if (kw <= 10) return { src: "/images/residential-solar.jpg",    label: "1 Kanal Home / Net-Metered Setup" };
+    if (kw <= 15) return { src: "/images/commercial-solar.jpg",     label: "Commercial Plaza Installation" };
+    return        { src: "/images/industrial-solar.jpg",            label: "Industrial & Agricultural System" };
   };
 
   const tierImageInfo = getTierImage(recommended.kw);
@@ -93,8 +95,8 @@ export default function YieldSimulatorScene() {
 
             <div className="flex justify-between font-sans text-xs text-solar-muted font-semibold mt-3">
               <span>PKR 5,000 / mo</span>
-              <span>PKR 80,000 / mo</span>
-              <span>PKR 160,000+ / mo</span>
+              <span>PKR 75,000 / mo</span>
+              <span>PKR 150,000+ / mo</span>
             </div>
           </div>
 
