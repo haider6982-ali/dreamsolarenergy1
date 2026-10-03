@@ -97,8 +97,8 @@ export default function ContactPage() {
         visualTone="navy"
         visualKicker="Direct Contact"
         visualBody="Tariq Mahmood: 0320-2200884 • Allama Iqbal Road, Vehari"
-        photoSrc="/images/turnkey-installation.jpg"
-        photoAlt="Dream Solar Energy Office"
+        photoSrc="/images/solar-maintenance.jpg"
+        photoAlt="Dream Solar Energy engineer ready to assist customers"
         stats={[
           { value: "6 Days", label: "Open Mon-Sat" },
           { value: "24/7", label: "WhatsApp Active" },

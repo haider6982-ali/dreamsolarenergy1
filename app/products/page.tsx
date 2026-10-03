@@ -43,7 +43,7 @@ export default function ProductsPage() {
       ],
       warranty: "25-Yr Panel Warranty • 5-Yr Inverter Warranty",
       badge: "Budget Friendly",
-      image: "/images/residential-solar.jpg",
+      image: "/images/pkg-4kw-rooftop.jpg",
     },
     {
       id: "pkg-6kw",
@@ -66,7 +66,7 @@ export default function ProductsPage() {
       ],
       warranty: "25-Yr Panel Warranty • 5-Yr Inverter Warranty",
       badge: "Most Popular",
-      image: "/images/solar-rooftop-showcase.jpg",
+      image: "/images/pkg-6kw-rooftop.jpg",
     },
     {
       id: "pkg-8kw",
@@ -89,7 +89,7 @@ export default function ProductsPage() {
       ],
       warranty: "25-Yr Panel Warranty • 5-Yr Inverter Warranty",
       badge: "High Performance",
-      image: "/hero-solar-installation.jpg",
+      image: "/images/pkg-8kw-rooftop.jpg",
     },
     {
       id: "pkg-10kw",
@@ -340,8 +340,8 @@ export default function ProductsPage() {
         visualTone="navy"
         visualKicker="Direct Supply"
         visualBody="Wholesale rates with authentic factory packaging and warranties"
-        photoSrc="/images/solar-rooftop-showcase.jpg"
-        photoAlt="Solar equipment showcase"
+        photoSrc="/images/tier1-hardware-equipment.jpg"
+        photoAlt="Tier-1 solar panel, hybrid inverter, and battery storage equipment showroom"
         stats={[
           { value: "100%", label: "Original Tier-1" },
           { value: "25 Yrs", label: "Panel Warranty" },

@@ -90,8 +90,8 @@ export default function CalculatorPage() {
         visualTone="navy"
         visualKicker="Interactive Estimator"
         visualBody="Calculated using current MEPCO residential and commercial slab tariffs."
-        photoSrc="/images/mepco-net-metering.jpg"
-        photoAlt="Solar net metering and capacity estimation"
+        photoSrc="/images/solar-savings-outcome.jpg"
+        photoAlt="Solar panel array gleaming under bright blue sky — energy savings achieved"
         stats={[
           { value: "Up to 90%", label: "Bill Reduction" },
           { value: "~2.5 Yrs", label: "Typical Payback" },
