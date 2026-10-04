@@ -24,6 +24,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://dreamsolarenergy.com"),
   title: {
     default: "Dream Solar Energy | Solar Systems in Vehari & South Punjab",
     template: "%s | Dream Solar Energy",

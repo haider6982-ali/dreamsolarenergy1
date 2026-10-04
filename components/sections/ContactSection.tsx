@@ -11,7 +11,6 @@ import {
   CheckCircle2,
   Navigation,
   Mail,
-  User,
   AtSign,
 } from "lucide-react";
 

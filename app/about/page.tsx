@@ -67,8 +67,8 @@ export default function AboutPage() {
         visualTone="navy"
         visualKicker="Clean Energy Deployment"
         visualBody="500+ residential, commercial, and agricultural setups across South Punjab"
-        photoSrc="/images/turnkey-installation.jpg"
-        photoAlt="Dream Solar Energy engineers completing a rooftop installation in South Punjab"
+        photoSrc="/images/about-solar-team.jpg"
+        photoAlt="Dream Solar Energy engineers and technical team inspecting a Tier-1 solar panel installation in South Punjab"
         photoPosition="center"
         stats={[
           { value: "500+", label: "Installations" },

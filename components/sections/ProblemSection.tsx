@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { AlertTriangle, TrendingUp, ShieldAlert, DollarSign, CloudOff } from "lucide-react";
+import { AlertTriangle, TrendingUp, ShieldAlert, CloudOff } from "lucide-react";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -11,7 +11,6 @@ if (typeof window !== "undefined") {
 
 export default function ProblemSection() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const counterRef = useRef<HTMLSpanElement>(null);
   const [gridRate, setGridRate] = useState(0);
 
   useEffect(() => {

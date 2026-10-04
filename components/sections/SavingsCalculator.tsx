@@ -140,18 +140,30 @@ export default function SavingsCalculator({ onOpenModal }: SavingsCalculatorProp
               Exact system output varies with rooftop shade, orientation, and inverter specifications.
             </p>
 
-            <a
-              href={`https://wa.me/923202200884?text=${encodeURIComponent(
-                `Hello Dream Solar Energy, based on the calculator, my monthly bill is PKR ${bill.toLocaleString()}. I would like to get a formal quotation for a ${recommended.kw} kW solar system.`
-              )}`}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 bg-[#F7941D] hover:bg-[#EE6B00] text-[#0F1B2E] font-bold text-xs sm:text-sm px-6 py-3 rounded-lg transition-colors shadow-site shrink-0"
-              style={{ fontFamily: "var(--font-outfit)" }}
-            >
-              <span>Get Formal Quote for {recommended.kw} kW</span>
-              <ArrowRight className="w-4 h-4 text-[#0F1B2E]" />
-            </a>
+            {onOpenModal ? (
+              <button
+                type="button"
+                onClick={onOpenModal}
+                className="inline-flex items-center gap-2 bg-[#F7941D] hover:bg-[#EE6B00] text-[#0F1B2E] font-bold text-xs sm:text-sm px-6 py-3 rounded-lg transition-colors shadow-site shrink-0 cursor-pointer"
+                style={{ fontFamily: "var(--font-outfit)" }}
+              >
+                <span>Get Formal Quote for {recommended.kw} kW</span>
+                <ArrowRight className="w-4 h-4 text-[#0F1B2E]" />
+              </button>
+            ) : (
+              <a
+                href={`https://wa.me/923202200884?text=${encodeURIComponent(
+                  `Hello Dream Solar Energy, based on the calculator, my monthly bill is PKR ${bill.toLocaleString()}. I would like to get a formal quotation for a ${recommended.kw} kW solar system.`
+                )}`}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 bg-[#F7941D] hover:bg-[#EE6B00] text-[#0F1B2E] font-bold text-xs sm:text-sm px-6 py-3 rounded-lg transition-colors shadow-site shrink-0"
+                style={{ fontFamily: "var(--font-outfit)" }}
+              >
+                <span>Get Formal Quote for {recommended.kw} kW</span>
+                <ArrowRight className="w-4 h-4 text-[#0F1B2E]" />
+              </a>
+            )}
           </div>
         </div>
       </div>
