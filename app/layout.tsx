@@ -61,6 +61,9 @@ export const metadata: Metadata = {
     apple: "/dream-solar-logo.png",
     shortcut: "/dream-solar-logo.png",
   },
+  verification: {
+    google: "google79ccc0d31c7d9c94",
+  },
 };
 
 export default function RootLayout({
