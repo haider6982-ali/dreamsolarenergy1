@@ -55,8 +55,11 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: "/dream-solar-logo.jpg",
-    apple: "/dream-solar-logo.jpg",
+    icon: [
+      { url: "/dream-solar-logo.png", type: "image/png" },
+    ],
+    apple: "/dream-solar-logo.png",
+    shortcut: "/dream-solar-logo.png",
   },
 };
 
