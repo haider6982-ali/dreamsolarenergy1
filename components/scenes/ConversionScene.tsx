@@ -7,7 +7,7 @@ import { siteContent } from "@/content/site";
 import SplitHeading from "@/components/ui/SplitHeading";
 import Magnetic from "@/components/ui/Magnetic";
 import { useQuoteModal } from "@/components/providers/QuoteModalContext";
-import { Phone, Zap } from "lucide-react";
+import { Phone, Zap, MapPin } from "lucide-react";
 
 export default function ConversionScene() {
   const containerRef = useRef<HTMLElement>(null);
@@ -134,6 +134,16 @@ export default function ConversionScene() {
                   {siteContent.conversion.officeHeading}
                 </span>
                 <p className="text-slate-300 leading-relaxed">{siteContent.meta.address}</p>
+                <a
+                  href="https://maps.app.goo.gl/LkGAoUZfkiuKcTDE8"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs text-solar-amber hover:text-white font-medium mt-2 transition-colors group"
+                >
+                  <MapPin className="w-3.5 h-3.5 text-solar-amber" />
+                  <span className="underline underline-offset-4">Open location in Google Maps</span>
+                  <span className="transition-transform group-hover:translate-x-0.5">→</span>
+                </a>
               </div>
 
               <div>

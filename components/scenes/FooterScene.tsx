@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { siteContent } from "@/content/site";
 import Magnetic from "@/components/ui/Magnetic";
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, MapPin } from "lucide-react";
 
 export default function FooterScene() {
   const [pakistanTime, setPakistanTime] = useState("");
@@ -90,6 +90,24 @@ export default function FooterScene() {
             <p className="text-slate-200 font-medium text-xs">
               {siteContent.footer.directContact}
             </p>
+            <div className="mt-4 pt-3 border-t border-white/10 space-y-1">
+              <span className="text-[11px] uppercase tracking-wider text-solar-amber font-bold block">
+                Office &amp; Showroom Location
+              </span>
+              <p className="text-xs text-slate-300">
+                Allama Iqbal Road, near Bank of Punjab, Vehari, Punjab
+              </p>
+              <a
+                href="https://maps.app.goo.gl/LkGAoUZfkiuKcTDE8"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs text-solar-amber hover:text-white transition-colors group mt-1.5"
+              >
+                <MapPin className="w-3.5 h-3.5 text-solar-amber" />
+                <span className="underline underline-offset-4">Open Google Maps Location</span>
+                <span className="transition-transform group-hover:translate-x-0.5">→</span>
+              </a>
+            </div>
           </div>
 
           {/* Col 2: Company Pages */}
@@ -131,8 +149,17 @@ export default function FooterScene() {
                 href="/contact"
                 className="text-slate-400 hover:text-white transition-colors text-sm"
               >
-                Contact &amp; Showroom Location
+                Contact &amp; Showroom
               </Link>
+              <a
+                href="https://maps.app.goo.gl/LkGAoUZfkiuKcTDE8"
+                target="_blank"
+                rel="noreferrer"
+                className="text-solar-amber hover:text-white transition-colors text-sm flex items-center gap-1.5"
+              >
+                <MapPin className="w-3.5 h-3.5" />
+                <span>Google Maps Directions</span>
+              </a>
               <a
                 href="https://wa.me/923202200884"
                 target="_blank"
@@ -155,11 +182,36 @@ export default function FooterScene() {
         </div>
 
         {/* Bottom Bar: Single complete service-area line with right clearance for floating chat button */}
-        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-slate-400 font-sans text-xs pr-0 sm:pr-24 pb-8 sm:pb-2">
-          <span>© {new Date().getFullYear()} Dream Solar Energy. All rights reserved.</span>
-          <span className="text-slate-300 font-medium">
-            Service Area: Vehari • Burewala • Mailsi • South Punjab
-          </span>
+        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-slate-400 font-sans text-xs pr-0 sm:pr-24 pb-8 sm:pb-2">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+            <span>© {new Date().getFullYear()} Dream Solar Energy. All rights reserved.</span>
+            <span className="hidden sm:inline text-white/20">•</span>
+            <span className="text-slate-300 font-medium">
+              Service Area: Vehari • Burewala • Mailsi • South Punjab
+            </span>
+          </div>
+
+          {/* Agency Credit */}
+          <div className="flex items-center gap-2 pt-2 md:pt-0 border-t border-white/10 md:border-t-0 w-full md:w-auto">
+            <span className="text-slate-400 font-medium text-[11px] sm:text-xs">
+              Powered by
+            </span>
+            <a
+              href="https://nexyt.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center group py-1 px-2.5 rounded-md bg-black/60 hover:bg-black/90 border border-white/15 hover:border-solar-amber/50 transition-all shadow-sm"
+              title="Powered by NEXYT"
+            >
+              <Image
+                src="/nexyt-logo.png"
+                alt="NEXYT"
+                width={84}
+                height={16}
+                className="h-3.5 sm:h-4 w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
