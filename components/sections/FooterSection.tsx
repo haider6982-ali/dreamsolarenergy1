@@ -10,8 +10,7 @@ export default function FooterSection() {
   const currentYear = new Date().getFullYear();
   const { openModal } = useQuoteModal();
 
-  const MAPS_URL =
-    "https://www.google.com/maps/place/30%C2%B002'30.4%22N+72%C2%B021'07.0%22E/@30.0417733,72.3493651,633m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d30.0417733!4d72.35194?hl=en&entry=ttu";
+  const MAPS_URL = "https://maps.app.goo.gl/LkGAoUZfkiuKcTDE8";
 
   return (
     <footer className="bg-[#0F1B2E] text-[#EFEDE7]/80 pt-16 pb-24 sm:pb-10 px-5 sm:px-6 lg:px-8 border-t border-[#1B2A4A]">
@@ -175,8 +174,8 @@ export default function FooterSection() {
             >
               <MapPin className="w-4 h-4 text-[#F7941D] shrink-0 mt-0.5" />
               <span>
-                Vehari, Punjab, Pakistan<br />
-                <span className="font-mono text-[10px] text-[#5B6472]">30°02&apos;30.4&quot;N 72°21&apos;07.0&quot;E</span>
+                Allama Iqbal Road, near Bank of Punjab<br />
+                Vehari, Punjab, Pakistan
               </span>
             </a>
 

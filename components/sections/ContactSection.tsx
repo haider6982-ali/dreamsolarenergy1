@@ -45,9 +45,8 @@ export default function ContactSection() {
     }, 5000);
   };
 
-  // Exact Google Maps coordinates provided: 30°02'30.4"N 72°21'07.0"E
-  const MAPS_URL =
-    "https://www.google.com/maps/place/30%C2%B002'30.4%22N+72%C2%B021'07.0%22E/@30.0417733,72.3493651,633m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d30.0417733!4d72.35194?hl=en&entry=ttu";
+  // Google Maps pin: Dawlance store location (30.042103, 72.35186)
+  const MAPS_URL = "https://maps.app.goo.gl/LkGAoUZfkiuKcTDE8";
 
   return (
     <section id="contact" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-[#F8F7F4] border-t border-[#E2DFD6]">
@@ -141,8 +140,8 @@ export default function ContactSection() {
                     Main Store &amp; Office
                   </h3>
                   <p className="text-sm text-slate-600 mt-1 leading-relaxed">
-                    Vehari, Punjab, Pakistan<br />
-                    <span className="text-xs text-slate-400 font-mono">30°02′30.4″N 72°21′07.0″E</span>
+                    Allama Iqbal Road, near Bank of Punjab<br />
+                    Vehari, Punjab, Pakistan
                   </p>
                 </div>
               </div>
@@ -162,7 +161,7 @@ export default function ContactSection() {
             <div className="rounded-lg overflow-hidden border border-slate-200 shadow-sm">
               <iframe
                 title="Dream Solar Energy Location"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1266.3!2d72.35194!3d30.0417733!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzMwLjQiTiA3MsKwMjEnMDcuMCJF!5e0!3m2!1sen!2s!4v1695000000000"
+                src="https://maps.google.com/maps?q=30.042103,72.35186&amp;hl=en&amp;z=17&amp;output=embed"
                 width="100%"
                 height="220"
                 style={{ border: 0 }}

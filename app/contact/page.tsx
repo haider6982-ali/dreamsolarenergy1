@@ -55,8 +55,7 @@ export default function ContactPage() {
     }, 4500);
   };
 
-  const MAPS_URL =
-    "https://www.google.com/maps/place/30%C2%B002'30.4%22N+72%C2%B021'07.0%22E/@30.0417733,72.3493651,633m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d30.0417733!4d72.35194?hl=en&entry=ttu";
+  const MAPS_URL = "https://maps.app.goo.gl/LkGAoUZfkiuKcTDE8";
 
   const faqs = [
     {
@@ -178,8 +177,7 @@ export default function ContactPage() {
                     </h3>
                     <p className="text-sm text-solar-muted mt-1 leading-relaxed font-sans">
                       Allama Iqbal Road, near Bank of Punjab<br />
-                      Vehari, Punjab, Pakistan<br />
-                      <span className="text-xs text-solar-muted/70 font-mono">30°02′30.4″N 72°21′07.0″E</span>
+                      Vehari, Punjab, Pakistan
                     </p>
                   </div>
                 </div>
@@ -199,7 +197,7 @@ export default function ContactPage() {
               <div className="rounded-2xl overflow-hidden border border-solar-border shadow-sm bg-white">
                 <iframe
                   title="Dream Solar Energy Showroom Location"
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1266.3!2d72.35194!3d30.0417733!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzMwLjQiTiA3MsKwMjEnMDcuMCJF!5e0!3m2!1sen!2s!4v1695000000000"
+                  src="https://maps.google.com/maps?q=30.042103,72.35186&amp;hl=en&amp;z=17&amp;output=embed"
                   width="100%"
                   height="200"
                   style={{ border: 0 }}
