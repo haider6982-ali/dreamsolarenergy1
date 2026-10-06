@@ -147,7 +147,7 @@ const jsonLd = {
       email: "info@dreamsolarenergy.co",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Club Road, Ghalla Mandi, Block B",
+        streetAddress: "Allama Iqbal Road, Near Bank of Punjab",
         addressLocality: "Vehari",
         addressRegion: "Punjab",
         postalCode: "61100",
@@ -158,6 +158,7 @@ const jsonLd = {
         latitude: "30.042103",
         longitude: "72.35186",
       },
+      hasMap: "https://maps.app.goo.gl/LkGAoUZfkiuKcTDE8",
       openingHoursSpecification: [
         {
           "@type": "OpeningHoursSpecification",
