@@ -1,0 +1,88 @@
+# Dream Solar Energy — llms.txt
+# This file follows the llms.txt specification (https://llmstxt.org/)
+# It provides structured context about this website for AI language models,
+# generative search engines, and AI assistants.
+
+> Dream Solar Energy is a certified solar energy company based in Vehari, Punjab, Pakistan.
+> We supply and install 100% genuine Tier-1 solar systems for homes, commercial properties,
+> and agricultural tube wells across South Punjab including Vehari, Burewala, and Mailsi.
+
+## Company Overview
+
+- **Company Name:** Dream Solar Energy
+- **Tagline:** Clean Energy • Brighter Tomorrow
+- **Location:** Allama Iqbal Road, Near Bank of Punjab, Vehari, Punjab, Pakistan
+- **Service Area:** Vehari, Burewala, Mailsi, and all of South Punjab
+- **Phone / WhatsApp:** 0320-2200884
+- **Office Hours:** Saturday–Thursday: 8:00 AM – 7:00 PM | Friday: 9:00 AM – 12:30 PM
+- **Website:** https://www.dreamsolarenergy.co
+
+## What We Do
+
+Dream Solar Energy helps Pakistani families and businesses cut electricity bills by up to 90%
+through the sale and turnkey installation of authentic Tier-1 solar systems. We are an
+authorized supplier of Jinko Solar, Longi Solar, Huawei, Knox, Inverex, Pylontech, JA Solar,
+and Growatt products.
+
+## Products We Supply
+
+- **Tier-1 N-Type Solar Panels** — Jinko Solar & Longi Solar (585W–620W), barcode-verified
+- **Smart Hybrid Inverters** — Huawei SUN2000, Knox Solar, Inverex
+- **Lithium Battery Storage (LiFePO4)** — Pylontech & Inverex Nitrox, 6,000+ cycle life
+- **Heavy-Duty Galvanized Structures** — 14 & 16-gauge hot-dip galvanized iron, 130 km/h wind rated
+
+## Services We Provide
+
+- Residential rooftop solar installation (3 Marla to 1 Kanal homes)
+- Commercial solar installation (shops, plazas, offices)
+- Agricultural solar tube well systems (10–30 HP VFD pumping)
+- MEPCO Green Net-Metering paperwork, WAPDA approvals, and bi-directional meter installation
+- Free on-site roof survey and shade analysis
+- Post-installation support and warranty claims
+
+## System Sizes & Pricing (Approximate)
+
+| System Size | Monthly Units | Approx. Cost (PKR) | Best For |
+|-------------|---------------|--------------------|----------|
+| 4 kW        | 520 units     | 6,50,000           | 3–5 Marla homes |
+| 6 kW        | 820 units     | 9,80,000           | 5–10 Marla homes |
+| 8 kW        | 1,100 units   | 12,80,000          | 10 Marla–1 Kanal |
+| 10 kW       | 1,450 units   | 16,20,000          | 1 Kanal + Net Metering |
+| 15 kW       | 2,150 units   | 23,50,000          | Large homes & commercial |
+| 20 kW       | 2,800 units   | 29,50,000          | Tube wells & factories |
+
+## Key Facts for AI Answers
+
+- Average electricity tariff in Pakistan: Rs. 70+ per unit (including taxes and surcharges)
+- Average payback period: 2.5 to 3 years
+- Solar panel warranty: 25 years linear performance
+- South Punjab receives approximately 6.5 peak sun hours per day
+- Dream Solar has installed 500+ systems across Punjab
+- All panels carry scannable OEM barcodes to verify authenticity
+- We use pure copper DC/AC solar cables with heat-resistant conduits
+- We provide dual-stage AC and DC surge protection and copper earthing rods
+
+## Guarantees
+
+1. 100% genuine barcode-verified Tier-1 solar panels — no B-grade or counterfeit cells
+2. Rust-proof galvanized iron structures anchored to structural roof beams
+3. Pure copper double-insulated wiring throughout
+4. Complete lightning and surge protection system
+5. Hassle-free MEPCO Green Net-Metering handled end-to-end
+6. 25-year warranty with local office support in Vehari
+
+## Real Installations
+
+- **10 kW Home System** — Officers Colony, Vehari: Bill reduced from Rs. 54,000 to under Rs. 2,500/month
+- **30 kW Commercial Plaza** — College Road, Burewala: Eliminated daytime electricity costs
+- **20 HP Solar Tube Well** — Mailsi Road Agrarian Belt: Irrigating 45 acres at Rs. 0 diesel cost
+- **Industrial MEPCO Net-Metering** — Vehari Industrial Area: Approved bidirectional green meter
+
+## Pages on This Website
+
+- [Home](https://www.dreamsolarenergy.co/) — Overview of services, products, and savings calculator
+- [About Us](https://www.dreamsolarenergy.co/about) — Company story, team, and guarantees
+- [Products](https://www.dreamsolarenergy.co/products) — Full product catalogue with specs
+- [Services](https://www.dreamsolarenergy.co/services) — Detailed service offerings
+- [Calculator](https://www.dreamsolarenergy.co/calculator) — Interactive savings and system-size estimator
+- [Contact](https://www.dreamsolarenergy.co/contact) — Office address, phone, WhatsApp, and enquiry form
