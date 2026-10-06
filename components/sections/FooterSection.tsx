@@ -220,13 +220,38 @@ export default function FooterSection() {
         </div>
 
         {/* Footer Bottom Strip */}
-        <div className="pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-[#5B6472] pr-0 sm:pr-24 pb-6 sm:pb-0">
-          <span>
-            &copy; {currentYear} Dream Solar Energy. All rights reserved.
-          </span>
-          <span>
-            Serving: Vehari &bull; Burewala &bull; Mailsi &bull; South Punjab
-          </span>
+        <div className="pt-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-xs text-[#5B6472] pr-0 sm:pr-24 pb-6 sm:pb-0">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+            <span>
+              &copy; {currentYear} Dream Solar Energy. All rights reserved.
+            </span>
+            <span className="hidden sm:inline text-[#2A3859]">&bull;</span>
+            <span>
+              Serving: Vehari &bull; Burewala &bull; Mailsi &bull; South Punjab
+            </span>
+          </div>
+
+          {/* Agency Credit */}
+          <div className="flex items-center gap-2 pt-2 md:pt-0 border-t border-[#1B2A4A] md:border-t-0 w-full md:w-auto">
+            <span className="text-[#8E9BB0] font-medium text-[11px] sm:text-xs">
+              Powered by
+            </span>
+            <a
+              href="https://nexyt.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center group py-1 px-2.5 rounded-md bg-[#091220]/70 hover:bg-[#091220] border border-[#1E2E4A] hover:border-[#F7941D]/50 transition-all shadow-sm"
+              title="Powered by NEXYT"
+            >
+              <Image
+                src="/nexyt-logo.png"
+                alt="NEXYT"
+                width={84}
+                height={16}
+                className="h-3.5 sm:h-4 w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
