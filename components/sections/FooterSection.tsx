@@ -240,15 +240,15 @@ export default function FooterSection() {
               href="https://nexyt.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center group py-1 px-2.5 rounded-md bg-[#091220]/70 hover:bg-[#091220] border border-[#1E2E4A] hover:border-[#F7941D]/50 transition-all shadow-sm"
+              className="inline-flex items-center transition-opacity hover:opacity-80"
               title="Powered by NEXYT"
             >
               <Image
                 src="/nexyt-logo.png"
                 alt="NEXYT"
-                width={84}
+                width={80}
                 height={16}
-                className="h-3.5 sm:h-4 w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity"
+                className="h-3.5 sm:h-4 w-auto object-contain"
               />
             </a>
           </div>
