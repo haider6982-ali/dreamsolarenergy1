@@ -99,9 +99,13 @@ export const metadata: Metadata = {
 
   // ── Favicon / App Icons ───────────────────────────────────────────────────────
   icons: {
-    icon: [{ url: "/dream-solar-logo.png", type: "image/png" }],
-    apple: "/dream-solar-logo.png",
-    shortcut: "/dream-solar-logo.png",
+    icon: [
+      { url: "/favicon-round.png", type: "image/png", sizes: "512x512" },
+      { url: "/favicon-round.png", type: "image/png", sizes: "192x192" },
+      { url: "/favicon-round.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: "/favicon-round.png",
+    shortcut: "/favicon-round.png",
   },
 
   // ── Google Search Console Verification ───────────────────────────────────────
