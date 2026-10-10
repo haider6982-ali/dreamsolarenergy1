@@ -98,10 +98,7 @@ export default function FooterScene() {
                 Allama Iqbal Road, near Bank of Punjab, Vehari, Punjab
               </p>
               <a
-                href="https://maps.app.goo.gl/LkGAoUZfkiuKcTDE8"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs text-solar-amber hover:text-white transition-colors group mt-1.5"
+                href="https://www.google.com/maps/place/Dream+Solar+Energy/@30.0420355,72.3516198,46m/data=!3m1!1e3!4m6!3m5!1s0x393cebcde0626c79:0x31e8618de89de98b!8m2!3d30.0420259!4d72.3518256!16s%2Fg%2F11zyyvx49w?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D"
               >
                 <MapPin className="w-3.5 h-3.5 text-solar-amber" />
                 <span className="underline underline-offset-4">Open Google Maps Location</span>
@@ -152,7 +149,7 @@ export default function FooterScene() {
                 Contact &amp; Showroom
               </Link>
               <a
-                href="https://maps.app.goo.gl/LkGAoUZfkiuKcTDE8"
+                href="https://www.google.com/maps/place/Dream+Solar+Energy/@30.0420355,72.3516198,46m/data=!3m1!1e3!4m6!3m5!1s0x393cebcde0626c79:0x31e8618de89de98b!8m2!3d30.0420259!4d72.3518256!16s%2Fg%2F11zyyvx49w?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noreferrer"
                 className="text-solar-amber hover:text-white transition-colors text-sm flex items-center gap-1.5"

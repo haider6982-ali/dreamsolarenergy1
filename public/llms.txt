@@ -12,7 +12,7 @@
 - **Company Name:** Dream Solar Energy
 - **Tagline:** Clean Energy • Brighter Tomorrow
 - **Location:** Allama Iqbal Road, Near Bank of Punjab, Vehari, 61100, Punjab, Pakistan
-- **Google Maps:** https://maps.app.goo.gl/LkGAoUZfkiuKcTDE8
+- **Google Maps:** https://www.google.com/maps/place/Dream+Solar+Energy/@30.0420355,72.3516198,46m/data=!3m1!1e3!4m6!3m5!1s0x393cebcde0626c79:0x31e8618de89de98b!8m2!3d30.0420259!4d72.3518256!16s%2Fg%2F11zyyvx49w?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D
 - **Coordinates:** 30.042103, 72.35186 (exact pin location)
 - **Service Area:** Vehari, Burewala, Mailsi, and all of South Punjab
 - **Phone / WhatsApp:** 0320-2200884

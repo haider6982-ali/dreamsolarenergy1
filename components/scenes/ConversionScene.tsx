@@ -135,7 +135,7 @@ export default function ConversionScene() {
                 </span>
                 <p className="text-slate-300 leading-relaxed">{siteContent.meta.address}</p>
                 <a
-                  href="https://maps.app.goo.gl/LkGAoUZfkiuKcTDE8"
+                  href="https://www.google.com/maps/place/Dream+Solar+Energy/@30.0420355,72.3516198,46m/data=!3m1!1e3!4m6!3m5!1s0x393cebcde0626c79:0x31e8618de89de98b!8m2!3d30.0420259!4d72.3518256!16s%2Fg%2F11zyyvx49w?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs text-solar-amber hover:text-white font-medium mt-2 transition-colors group"

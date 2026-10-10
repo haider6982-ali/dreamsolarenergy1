@@ -45,8 +45,9 @@ export default function ContactSection() {
     }, 5000);
   };
 
-  // Google Maps pin: Dawlance store location (30.042103, 72.35186)
-  const MAPS_URL = "https://maps.app.goo.gl/LkGAoUZfkiuKcTDE8";
+  // Google Maps: Dream Solar Energy official listing
+  const MAPS_URL =
+    "https://www.google.com/maps/place/Dream+Solar+Energy/@30.0420355,72.3516198,46m/data=!3m1!1e3!4m6!3m5!1s0x393cebcde0626c79:0x31e8618de89de98b!8m2!3d30.0420259!4d72.3518256!16s%2Fg%2F11zyyvx49w?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D";
 
   return (
     <section id="contact" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-[#F8F7F4] border-t border-[#E2DFD6]">
