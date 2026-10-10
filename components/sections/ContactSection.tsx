@@ -162,7 +162,7 @@ export default function ContactSection() {
             <div className="rounded-lg overflow-hidden border border-slate-200 shadow-sm">
               <iframe
                 title="Dream Solar Energy Location"
-                src="https://maps.google.com/maps?q=30.042103,72.35186&amp;hl=en&amp;z=17&amp;output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100!2d72.3518256!3d30.0420259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393cebcde0626c79%3A0x31e8618de89de98b!2sDream%20Solar%20Energy!5e0!3m2!1sen!2spk!4v1699000000000!5m2!1sen!2spk"
                 width="100%"
                 height="220"
                 style={{ border: 0 }}
