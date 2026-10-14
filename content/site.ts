@@ -171,7 +171,7 @@ export const siteContent: SiteContent = {
     italicAccent: "Save up to 90% every month",
     subtitle:
       "Run your air conditioners, water pumps, and home appliances with zero load-shedding tension. 100% original Tier-1 solar panels, hybrid inverters, and official MEPCO green net-metering installed by certified engineers.",
-    ctaPrimary: "Calculate Your Savings",
+    ctaPrimary: "Get a Quote",
     ctaSecondary: "See Real Installations",
     liveTelemetry: {
       location: "VEHARI (SOUTH PUNJAB)",
